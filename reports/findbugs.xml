@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.0.0" sequence="0" timestamp="1410861496776" analysisTimestamp="1410861496811" release="">
+  <Project projectName="">
+    <Jar>c:\Users\stephanO\workspace\TDDAndroid\bin</Jar>
+    <AuxClasspathEntry>c:\Users\stephanO\workspace\TDDAndroid\${android.jar}</AuxClasspathEntry>
+  </Project>
+  <Errors errors="1" missingClasses="6">
+    <Error>
+      <ErrorMessage>File not found: filesystem:C:\Users\stephanO\workspace\TDDAndroid\${android.jar}</ErrorMessage>
+    </Error>
+    <MissingClass>android.app.Activity</MissingClass>
+    <MissingClass>android.content.Intent</MissingClass>
+    <MissingClass>android.view.MenuInflater</MissingClass>
+    <MissingClass>android.view.MenuItem</MissingClass>
+    <MissingClass>android.view.View$OnClickListener</MissingClass>
+    <MissingClass>android.widget.Button</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Tue, 16 Sep 2014 11:58:16 +0200" total_classes="13" referenced_classes="21" total_bugs="0" total_size="83" num_packages="1" java_version="1.8.0_20" vm_version="25.20-b23" cpu_seconds="1.55" clock_seconds="1.79" peak_mbytes="30.13" alloc_mbytes="247.50" gc_seconds="0.15">
+    <PackageStats package="de.haw_hamburg.tddandroid" total_bugs="0" total_types="13" total_size="83">
+      <ClassStats class="de.haw_hamburg.tddandroid.BuildConfig" sourceFile="BuildConfig.java" interface="false" size="4" bugs="0"/>
+      <ClassStats class="de.haw_hamburg.tddandroid.MainActivity" sourceFile="MainActivity.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="de.haw_hamburg.tddandroid.R" sourceFile="R.java" interface="false" size="4" bugs="0"/>
+      <ClassStats class="de.haw_hamburg.tddandroid.R$attr" sourceFile="R.java" interface="false" size="3" bugs="0"/>
+      <ClassStats class="de.haw_hamburg.tddandroid.R$dimen" sourceFile="R.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="de.haw_hamburg.tddandroid.R$drawable" sourceFile="R.java" interface="false" size="4" bugs="0"/>
+      <ClassStats class="de.haw_hamburg.tddandroid.R$id" sourceFile="R.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="de.haw_hamburg.tddandroid.R$layout" sourceFile="R.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="de.haw_hamburg.tddandroid.R$menu" sourceFile="R.java" interface="false" size="4" bugs="0"/>
+      <ClassStats class="de.haw_hamburg.tddandroid.R$string" sourceFile="R.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="de.haw_hamburg.tddandroid.R$style" sourceFile="R.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="de.haw_hamburg.tddandroid.WelcomeScreenActivity" sourceFile="WelcomeScreenActivity.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="de.haw_hamburg.tddandroid.WelcomeScreenActivity$1" sourceFile="WelcomeScreenActivity.java" interface="false" size="7" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="295" invocations="316" avgMicrosecondsPerInvocation="936" maxMicrosecondsPerInvocation="34102" standardDeviationMircosecondsPerInvocation="3218"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="148" invocations="319" avgMicrosecondsPerInvocation="466" maxMicrosecondsPerInvocation="7559" standardDeviationMircosecondsPerInvocation="604"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="79" invocations="21" avgMicrosecondsPerInvocation="3804" maxMicrosecondsPerInvocation="44414" standardDeviationMircosecondsPerInvocation="10044"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="65" invocations="19" avgMicrosecondsPerInvocation="3444" maxMicrosecondsPerInvocation="56189" standardDeviationMircosecondsPerInvocation="12446"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="51" invocations="19" avgMicrosecondsPerInvocation="2718" maxMicrosecondsPerInvocation="49553" standardDeviationMircosecondsPerInvocation="11039"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="49" invocations="274" avgMicrosecondsPerInvocation="182" maxMicrosecondsPerInvocation="5357" standardDeviationMircosecondsPerInvocation="487"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="38" invocations="30" avgMicrosecondsPerInvocation="1282" maxMicrosecondsPerInvocation="22436" standardDeviationMircosecondsPerInvocation="4150"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="30" invocations="52" avgMicrosecondsPerInvocation="581" maxMicrosecondsPerInvocation="3472" standardDeviationMircosecondsPerInvocation="864"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="27" invocations="19" avgMicrosecondsPerInvocation="1437" maxMicrosecondsPerInvocation="22304" standardDeviationMircosecondsPerInvocation="4923"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="24" invocations="19" avgMicrosecondsPerInvocation="1302" maxMicrosecondsPerInvocation="15203" standardDeviationMircosecondsPerInvocation="3378"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="19" invocations="19" avgMicrosecondsPerInvocation="1032" maxMicrosecondsPerInvocation="12760" standardDeviationMircosecondsPerInvocation="2773"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.impl.ZipCodeBaseFactory" totalMilliseconds="17" invocations="21" avgMicrosecondsPerInvocation="844" maxMicrosecondsPerInvocation="11177" standardDeviationMircosecondsPerInvocation="2370"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>
