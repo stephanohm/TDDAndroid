@@ -26,6 +26,18 @@
             android:name=".MainActivity"
             android:label="@string/app_name" >
         </activity>
+        <activity
+            android:name=".WebViewNativeInteraction"
+            android:label="@string/title_activity_web_view_native_interaction" >
+        </activity>
+        <activity
+            android:name=".SimpleBrowserActivity"
+            android:label="@string/title_activity_simple_browser" >
+        </activity>
+        <activity
+            android:name=".UserValidationActivity"
+            android:label="@string/title_activity_user_validation" >
+        </activity>
     </application>
 
 </manifest>
