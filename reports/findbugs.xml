@@ -1,50 +1,122 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<BugCollection version="3.0.0" sequence="0" timestamp="1411132206211" analysisTimestamp="1411132206219" release="">
+<BugCollection version="3.0.0" sequence="0" timestamp="1411981442312" analysisTimestamp="1411981442335" release="">
   <Project projectName="">
     <Jar>c:\Users\stephanO\workspace\TDDAndroid\bin</Jar>
     <AuxClasspathEntry>c:\Users\stephanO\workspace\TDDAndroid\${android.jar}</AuxClasspathEntry>
   </Project>
-  <Errors errors="1" missingClasses="6">
+  <BugInstance type="SF_SWITCH_NO_DEFAULT" priority="2" rank="19" abbrev="SF" category="STYLE">
+    <Class classname="de.haw_hamburg.tddandroid.MainActivity">
+      <SourceLine classname="de.haw_hamburg.tddandroid.MainActivity" start="21" end="108" sourcefile="MainActivity.java" sourcepath="de/haw_hamburg/tddandroid/MainActivity.java"/>
+    </Class>
+    <Method classname="de.haw_hamburg.tddandroid.MainActivity" name="onSectionAttached" signature="(I)V" isStatic="false">
+      <SourceLine classname="de.haw_hamburg.tddandroid.MainActivity" start="60" end="71" startBytecode="0" endBytecode="140" sourcefile="MainActivity.java" sourcepath="de/haw_hamburg/tddandroid/MainActivity.java"/>
+    </Method>
+    <SourceLine classname="de.haw_hamburg.tddandroid.MainActivity" start="60" end="68" startBytecode="1" endBytecode="63" sourcefile="MainActivity.java" sourcepath="de/haw_hamburg/tddandroid/MainActivity.java"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" abbrev="UrF" category="PERFORMANCE">
+    <Class classname="de.haw_hamburg.tddandroid.WebViewNativeInteraction$WebViewInterface">
+      <SourceLine classname="de.haw_hamburg.tddandroid.WebViewNativeInteraction$WebViewInterface" start="82" end="108" sourcefile="WebViewNativeInteraction.java" sourcepath="de/haw_hamburg/tddandroid/WebViewNativeInteraction.java"/>
+    </Class>
+    <Field classname="de.haw_hamburg.tddandroid.WebViewNativeInteraction$WebViewInterface" name="mContext" signature="Landroid/content/Context;" isStatic="false">
+      <SourceLine classname="de.haw_hamburg.tddandroid.WebViewNativeInteraction$WebViewInterface" sourcefile="WebViewNativeInteraction.java" sourcepath="de/haw_hamburg/tddandroid/WebViewNativeInteraction.java"/>
+    </Field>
+    <SourceLine classname="de.haw_hamburg.tddandroid.WebViewNativeInteraction$WebViewInterface" start="83" end="83" startBytecode="11" endBytecode="11" sourcefile="WebViewNativeInteraction.java" sourcepath="de/haw_hamburg/tddandroid/WebViewNativeInteraction.java"/>
+  </BugInstance>
+  <Errors errors="1" missingClasses="32">
     <Error>
       <ErrorMessage>File not found: filesystem:C:\Users\stephanO\workspace\TDDAndroid\${android.jar}</ErrorMessage>
     </Error>
+    <MissingClass>android.app.ActionBar</MissingClass>
     <MissingClass>android.app.Activity</MissingClass>
+    <MissingClass>android.app.Fragment</MissingClass>
+    <MissingClass>android.app.FragmentManager</MissingClass>
+    <MissingClass>android.app.FragmentTransaction</MissingClass>
     <MissingClass>android.content.Intent</MissingClass>
+    <MissingClass>android.content.SharedPreferences</MissingClass>
+    <MissingClass>android.content.SharedPreferences$Editor</MissingClass>
+    <MissingClass>android.os.Build$VERSION</MissingClass>
+    <MissingClass>android.os.Bundle</MissingClass>
+    <MissingClass>android.preference.PreferenceManager</MissingClass>
+    <MissingClass>android.support.v4.app.ActionBarDrawerToggle</MissingClass>
+    <MissingClass>android.support.v4.app.NavUtils</MissingClass>
+    <MissingClass>android.support.v4.widget.DrawerLayout</MissingClass>
+    <MissingClass>android.text.Editable</MissingClass>
+    <MissingClass>android.util.Log</MissingClass>
+    <MissingClass>android.view.LayoutInflater</MissingClass>
     <MissingClass>android.view.MenuInflater</MissingClass>
     <MissingClass>android.view.MenuItem</MissingClass>
     <MissingClass>android.view.View$OnClickListener</MissingClass>
+    <MissingClass>android.webkit.WebSettings</MissingClass>
+    <MissingClass>android.webkit.WebView</MissingClass>
+    <MissingClass>android.webkit.WebViewClient</MissingClass>
+    <MissingClass>android.widget.AdapterView$OnItemClickListener</MissingClass>
+    <MissingClass>android.widget.ArrayAdapter</MissingClass>
     <MissingClass>android.widget.Button</MissingClass>
+    <MissingClass>android.widget.EditText</MissingClass>
+    <MissingClass>android.widget.ListView</MissingClass>
+    <MissingClass>android.widget.Spinner</MissingClass>
+    <MissingClass>android.widget.TextView</MissingClass>
+    <MissingClass>android.widget.Toast</MissingClass>
+    <MissingClass>org.json.JSONObject</MissingClass>
   </Errors>
-  <FindBugsSummary timestamp="Fri, 19 Sep 2014 15:10:06 +0200" total_classes="13" referenced_classes="21" total_bugs="0" total_size="83" num_packages="1" java_version="1.8.0_20" vm_version="25.20-b23" cpu_seconds="1.36" clock_seconds="1.45" peak_mbytes="28.45" alloc_mbytes="247.50" gc_seconds="0.14">
-    <PackageStats package="de.haw_hamburg.tddandroid" total_bugs="0" total_types="13" total_size="83">
+  <FindBugsSummary timestamp="Mon, 29 Sep 2014 11:04:02 +0200" total_classes="30" referenced_classes="44" total_bugs="2" total_size="545" num_packages="2" java_version="1.8.0_20" vm_version="25.20-b23" cpu_seconds="1.70" clock_seconds="1.89" peak_mbytes="33.90" alloc_mbytes="247.50" gc_seconds="0.14" priority_2="2">
+    <PackageStats package="de.haw_hamburg.tddandroid" total_bugs="2" total_types="29" total_size="514" priority_2="2">
       <ClassStats class="de.haw_hamburg.tddandroid.BuildConfig" sourceFile="BuildConfig.java" interface="false" size="4" bugs="0"/>
-      <ClassStats class="de.haw_hamburg.tddandroid.MainActivity" sourceFile="MainActivity.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="de.haw_hamburg.tddandroid.MainActivity" sourceFile="MainActivity.java" interface="false" size="46" bugs="1" priority_2="1"/>
+      <ClassStats class="de.haw_hamburg.tddandroid.MainActivity$PlaceholderFragment" sourceFile="MainActivity.java" interface="false" size="18" bugs="0"/>
+      <ClassStats class="de.haw_hamburg.tddandroid.NavigationDrawerFragment" sourceFile="NavigationDrawerFragment.java" interface="false" size="109" bugs="0"/>
+      <ClassStats class="de.haw_hamburg.tddandroid.NavigationDrawerFragment$1" sourceFile="NavigationDrawerFragment.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="de.haw_hamburg.tddandroid.NavigationDrawerFragment$2" sourceFile="NavigationDrawerFragment.java" interface="false" size="21" bugs="0"/>
+      <ClassStats class="de.haw_hamburg.tddandroid.NavigationDrawerFragment$3" sourceFile="NavigationDrawerFragment.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="de.haw_hamburg.tddandroid.NavigationDrawerFragment$NavigationDrawerCallbacks" sourceFile="NavigationDrawerFragment.java" interface="true" size="2" bugs="0"/>
       <ClassStats class="de.haw_hamburg.tddandroid.R" sourceFile="R.java" interface="false" size="4" bugs="0"/>
+      <ClassStats class="de.haw_hamburg.tddandroid.R$array" sourceFile="R.java" interface="false" size="4" bugs="0"/>
       <ClassStats class="de.haw_hamburg.tddandroid.R$attr" sourceFile="R.java" interface="false" size="3" bugs="0"/>
-      <ClassStats class="de.haw_hamburg.tddandroid.R$dimen" sourceFile="R.java" interface="false" size="5" bugs="0"/>
-      <ClassStats class="de.haw_hamburg.tddandroid.R$drawable" sourceFile="R.java" interface="false" size="4" bugs="0"/>
-      <ClassStats class="de.haw_hamburg.tddandroid.R$id" sourceFile="R.java" interface="false" size="6" bugs="0"/>
-      <ClassStats class="de.haw_hamburg.tddandroid.R$layout" sourceFile="R.java" interface="false" size="5" bugs="0"/>
-      <ClassStats class="de.haw_hamburg.tddandroid.R$menu" sourceFile="R.java" interface="false" size="4" bugs="0"/>
-      <ClassStats class="de.haw_hamburg.tddandroid.R$string" sourceFile="R.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="de.haw_hamburg.tddandroid.R$dimen" sourceFile="R.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="de.haw_hamburg.tddandroid.R$drawable" sourceFile="R.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="de.haw_hamburg.tddandroid.R$id" sourceFile="R.java" interface="false" size="31" bugs="0"/>
+      <ClassStats class="de.haw_hamburg.tddandroid.R$layout" sourceFile="R.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="de.haw_hamburg.tddandroid.R$menu" sourceFile="R.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="de.haw_hamburg.tddandroid.R$string" sourceFile="R.java" interface="false" size="26" bugs="0"/>
       <ClassStats class="de.haw_hamburg.tddandroid.R$style" sourceFile="R.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="de.haw_hamburg.tddandroid.SimpleBrowserActivity" sourceFile="SimpleBrowserActivity.java" interface="false" size="37" bugs="0"/>
+      <ClassStats class="de.haw_hamburg.tddandroid.SimpleBrowserActivity$1" sourceFile="SimpleBrowserActivity.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="de.haw_hamburg.tddandroid.SimpleBrowserActivity$2" sourceFile="SimpleBrowserActivity.java" interface="false" size="16" bugs="0"/>
+      <ClassStats class="de.haw_hamburg.tddandroid.UserValidationActivity" sourceFile="UserValidationActivity.java" interface="false" size="42" bugs="0"/>
+      <ClassStats class="de.haw_hamburg.tddandroid.UserValidationActivity$1" sourceFile="UserValidationActivity.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="de.haw_hamburg.tddandroid.WebViewNativeInteraction" sourceFile="WebViewNativeInteraction.java" interface="false" size="36" bugs="0"/>
+      <ClassStats class="de.haw_hamburg.tddandroid.WebViewNativeInteraction$1" sourceFile="WebViewNativeInteraction.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="de.haw_hamburg.tddandroid.WebViewNativeInteraction$WebViewInterface" sourceFile="WebViewNativeInteraction.java" interface="false" size="17" bugs="1" priority_2="1"/>
+      <ClassStats class="de.haw_hamburg.tddandroid.WebViewNativeInteraction$WebViewInterface$1" sourceFile="WebViewNativeInteraction.java" interface="false" size="10" bugs="0"/>
       <ClassStats class="de.haw_hamburg.tddandroid.WelcomeScreenActivity" sourceFile="WelcomeScreenActivity.java" interface="false" size="13" bugs="0"/>
       <ClassStats class="de.haw_hamburg.tddandroid.WelcomeScreenActivity$1" sourceFile="WelcomeScreenActivity.java" interface="false" size="7" bugs="0"/>
     </PackageStats>
+    <PackageStats package="de.haw_hamburg.tddandroid.utils" total_bugs="0" total_types="1" total_size="31">
+      <ClassStats class="de.haw_hamburg.tddandroid.utils.User" sourceFile="User.java" interface="false" size="31" bugs="0"/>
+    </PackageStats>
     <FindBugsProfile>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="266" invocations="316" avgMicrosecondsPerInvocation="843" maxMicrosecondsPerInvocation="29151" standardDeviationMircosecondsPerInvocation="2857"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="125" invocations="319" avgMicrosecondsPerInvocation="394" maxMicrosecondsPerInvocation="22263" standardDeviationMircosecondsPerInvocation="1261"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="76" invocations="21" avgMicrosecondsPerInvocation="3654" maxMicrosecondsPerInvocation="41035" standardDeviationMircosecondsPerInvocation="9324"/>
-      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="62" invocations="274" avgMicrosecondsPerInvocation="227" maxMicrosecondsPerInvocation="5246" standardDeviationMircosecondsPerInvocation="661"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="49" invocations="19" avgMicrosecondsPerInvocation="2582" maxMicrosecondsPerInvocation="47162" standardDeviationMircosecondsPerInvocation="10508"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.UnreadFields" totalMilliseconds="37" invocations="13" avgMicrosecondsPerInvocation="2877" maxMicrosecondsPerInvocation="36259" standardDeviationMircosecondsPerInvocation="9636"/>
-      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="33" invocations="52" avgMicrosecondsPerInvocation="635" maxMicrosecondsPerInvocation="3617" standardDeviationMircosecondsPerInvocation="892"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="32" invocations="30" avgMicrosecondsPerInvocation="1090" maxMicrosecondsPerInvocation="20578" standardDeviationMircosecondsPerInvocation="3755"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="28" invocations="19" avgMicrosecondsPerInvocation="1495" maxMicrosecondsPerInvocation="20593" standardDeviationMircosecondsPerInvocation="4526"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="23" invocations="19" avgMicrosecondsPerInvocation="1241" maxMicrosecondsPerInvocation="12205" standardDeviationMircosecondsPerInvocation="2778"/>
-      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="17" invocations="19" avgMicrosecondsPerInvocation="901" maxMicrosecondsPerInvocation="11557" standardDeviationMircosecondsPerInvocation="2518"/>
-      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="15" invocations="21" avgMicrosecondsPerInvocation="743" maxMicrosecondsPerInvocation="10233" standardDeviationMircosecondsPerInvocation="2212"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="301" invocations="397" avgMicrosecondsPerInvocation="758" maxMicrosecondsPerInvocation="53787" standardDeviationMircosecondsPerInvocation="3572"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="102" invocations="401" avgMicrosecondsPerInvocation="254" maxMicrosecondsPerInvocation="5148" standardDeviationMircosecondsPerInvocation="413"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="75" invocations="44" avgMicrosecondsPerInvocation="1707" maxMicrosecondsPerInvocation="28763" standardDeviationMircosecondsPerInvocation="4935"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="56" invocations="92" avgMicrosecondsPerInvocation="618" maxMicrosecondsPerInvocation="46197" standardDeviationMircosecondsPerInvocation="4787"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="54" invocations="91" avgMicrosecondsPerInvocation="596" maxMicrosecondsPerInvocation="13326" standardDeviationMircosecondsPerInvocation="1493"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="50" invocations="148" avgMicrosecondsPerInvocation="341" maxMicrosecondsPerInvocation="11295" standardDeviationMircosecondsPerInvocation="1159"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="50" invocations="92" avgMicrosecondsPerInvocation="549" maxMicrosecondsPerInvocation="12923" standardDeviationMircosecondsPerInvocation="1687"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="47" invocations="91" avgMicrosecondsPerInvocation="516" maxMicrosecondsPerInvocation="4944" standardDeviationMircosecondsPerInvocation="857"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="45" invocations="91" avgMicrosecondsPerInvocation="505" maxMicrosecondsPerInvocation="7501" standardDeviationMircosecondsPerInvocation="982"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="45" invocations="91" avgMicrosecondsPerInvocation="503" maxMicrosecondsPerInvocation="7201" standardDeviationMircosecondsPerInvocation="1107"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="43" invocations="92" avgMicrosecondsPerInvocation="476" maxMicrosecondsPerInvocation="8416" standardDeviationMircosecondsPerInvocation="1109"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="43" invocations="315" avgMicrosecondsPerInvocation="139" maxMicrosecondsPerInvocation="4275" standardDeviationMircosecondsPerInvocation="426"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="40" invocations="72" avgMicrosecondsPerInvocation="557" maxMicrosecondsPerInvocation="19134" standardDeviationMircosecondsPerInvocation="2355"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="23" invocations="77" avgMicrosecondsPerInvocation="311" maxMicrosecondsPerInvocation="5158" standardDeviationMircosecondsPerInvocation="660"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="21" invocations="44" avgMicrosecondsPerInvocation="487" maxMicrosecondsPerInvocation="8850" standardDeviationMircosecondsPerInvocation="1499"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindInconsistentSync2" totalMilliseconds="20" invocations="30" avgMicrosecondsPerInvocation="693" maxMicrosecondsPerInvocation="13817" standardDeviationMircosecondsPerInvocation="2510"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LiveLocalStoreDataflowFactory" totalMilliseconds="20" invocations="85" avgMicrosecondsPerInvocation="239" maxMicrosecondsPerInvocation="11027" standardDeviationMircosecondsPerInvocation="1208"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.SerializableIdiom" totalMilliseconds="18" invocations="30" avgMicrosecondsPerInvocation="607" maxMicrosecondsPerInvocation="15219" standardDeviationMircosecondsPerInvocation="2714"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindDeadLocalStores" totalMilliseconds="17" invocations="30" avgMicrosecondsPerInvocation="578" maxMicrosecondsPerInvocation="14107" standardDeviationMircosecondsPerInvocation="2516"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="16" invocations="44" avgMicrosecondsPerInvocation="374" maxMicrosecondsPerInvocation="5891" standardDeviationMircosecondsPerInvocation="1023"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="14" invocations="44" avgMicrosecondsPerInvocation="337" maxMicrosecondsPerInvocation="6067" standardDeviationMircosecondsPerInvocation="969"/>
     </FindBugsProfile>
   </FindBugsSummary>
   <ClassFeatures></ClassFeatures>

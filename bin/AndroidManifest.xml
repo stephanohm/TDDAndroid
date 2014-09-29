@@ -7,15 +7,18 @@
     <uses-sdk
         android:minSdkVersion="16"
         android:targetSdkVersion="18" />
+    
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
+        android:permission="android.permission.INTERNET"
         android:theme="@style/AppTheme" >
         <activity
             android:name=".WelcomeScreenActivity"
-            android:label="@string/title_activity_welcome_screen" >
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -29,14 +32,30 @@
         <activity
             android:name=".WebViewNativeInteraction"
             android:label="@string/title_activity_web_view_native_interaction" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
         </activity>
         <activity
             android:name=".SimpleBrowserActivity"
             android:label="@string/title_activity_simple_browser" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
         </activity>
         <activity
             android:name=".UserValidationActivity"
             android:label="@string/title_activity_user_validation" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".RegisterActivity" />
+        </activity>
+        <activity
+            android:name=".RegisterActivity"
+            android:label="@string/title_activity_register" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
         </activity>
     </application>
 

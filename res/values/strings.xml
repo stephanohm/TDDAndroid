@@ -24,5 +24,36 @@
     <string name="password">password</string>
     <string name="mobile_os">mobile_os</string>
     <string name="return_to_main">return to main</string>
-   
+    <string name="enter_text">enter text</string>
+    <string name="display_text">display text</string>
+    <string name="display_alert">display alert</string>
+    <string name="display_toast">display toast</string>
+    <string name="register_form">register form</string>
+    <string name="open_webview_native_interaction">webview native interaction</string>
+    <string name="open_browser_webview">simple browser</string>
+    <string name="red">red</string>
+    <string name="yellow">yellow</string>
+    <string name="green">green</string>
+    <string name="toast">this is a toast</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="acceptTermsOfService">Accept terms of service</string>
+    <string name="register">register</string>
+    <string-array name="webpages">
+        <item >URL as entered</item>
+        <item >long page to scroll</item>
+        <item >standard html elements page</item>
+    </string-array>
+    
+     <string-array name="string_array">
+        <item>IOS</item>
+        <item>Android</item>
+        <item>Blackberry</item>
+        <item>Windows Phone</item>
+        <item>Firefox OS</item>
+        <item>Tizen</item>
+        <item>Bada</item>
+        <item>Symbian</item>
+        <item>webOS</item>
+    </string-array>
+
 </resources>

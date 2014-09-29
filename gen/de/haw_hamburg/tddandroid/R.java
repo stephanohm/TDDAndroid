@@ -9,7 +9,8 @@ package de.haw_hamburg.tddandroid;
 
 public final class R {
     public static final class array {
-        public static final int webpages=0x7f040000;
+        public static final int string_array=0x7f070001;
+        public static final int webpages=0x7f070000;
     }
     public static final class attr {
     }
@@ -21,9 +22,9 @@ public final class R {
          would include 7" and 10" devices in landscape (~960dp and ~1280dp respectively).
     
          */
-        public static final int activity_horizontal_margin=0x7f050000;
-        public static final int activity_vertical_margin=0x7f050001;
-        public static final int navigation_drawer_width=0x7f050002;
+        public static final int activity_horizontal_margin=0x7f040000;
+        public static final int activity_vertical_margin=0x7f040001;
+        public static final int navigation_drawer_width=0x7f040002;
     }
     public static final class drawable {
         public static final int drawer_shadow=0x7f020000;
@@ -31,62 +32,90 @@ public final class R {
         public static final int ic_launcher=0x7f020002;
     }
     public static final class id {
-        public static final int URLeditText=0x7f090004;
-        public static final int action_example=0x7f09001b;
-        public static final int action_settings=0x7f09001a;
-        public static final int browseButton=0x7f090006;
-        public static final int browserWebView=0x7f090005;
-        public static final int btnLaunchMain=0x7f090018;
-        public static final int container=0x7f090001;
-        public static final int drawer_layout=0x7f090000;
-        public static final int emailLabel=0x7f090008;
-        public static final int emailTextView=0x7f090009;
-        public static final int fnameEditText=0x7f090014;
-        public static final int fnameLabel=0x7f090013;
-        public static final int lnameEditText=0x7f090016;
-        public static final int lnameLabel=0x7f090015;
-        public static final int mobileLabel=0x7f09000e;
-        public static final int mobileTextView=0x7f09000f;
-        public static final int navigation_drawer=0x7f090002;
-        public static final int passwordLabel=0x7f09000c;
-        public static final int passwordTextView=0x7f09000d;
-        public static final int relativeLayout1=0x7f090012;
-        public static final int returnButton=0x7f090010;
-        public static final int section_label=0x7f090019;
-        public static final int textView1=0x7f090003;
-        public static final int updateWebViewButton=0x7f090017;
-        public static final int urlSpinner=0x7f090007;
-        public static final int userNameLabel=0x7f09000a;
-        public static final int userNameTextView=0x7f09000b;
-        public static final int webView=0x7f090011;
+        public static final int URLeditText=0x7f0a0015;
+        public static final int action_example=0x7f0a0028;
+        public static final int action_settings=0x7f0a0027;
+        public static final int browseButton=0x7f0a0017;
+        public static final int browserWebView=0x7f0a0018;
+        public static final int btnLaunchMain=0x7f0a0026;
+        public static final int displayText=0x7f0a0002;
+        public static final int displayToast=0x7f0a0004;
+        public static final int emailEditText=0x7f0a000d;
+        public static final int emailLabel=0x7f0a0019;
+        public static final int emailTextView=0x7f0a001a;
+        public static final int enterText=0x7f0a0000;
+        public static final int fnameEditText=0x7f0a0022;
+        public static final int fnameLabel=0x7f0a0021;
+        public static final int greenRadioButton=0x7f0a000c;
+        public static final int lnameEditText=0x7f0a0024;
+        public static final int lnameLabel=0x7f0a0023;
+        public static final int mobileLabel=0x7f0a0010;
+        public static final int mobileSpinner=0x7f0a0013;
+        public static final int mobileTextView=0x7f0a001d;
+        public static final int openRegisterForm=0x7f0a0006;
+        public static final int openSimpleBrowser=0x7f0a0007;
+        public static final int openWebview=0x7f0a0008;
+        public static final int passwordEditText=0x7f0a0011;
+        public static final int passwordLabel=0x7f0a000e;
+        public static final int passwordTextView=0x7f0a001c;
+        public static final int radioGroup=0x7f0a0009;
+        public static final int redRadioButton=0x7f0a000a;
+        public static final int registerButton=0x7f0a0003;
+        public static final int relativeLayout1=0x7f0a0020;
+        public static final int response=0x7f0a0005;
+        public static final int returnButton=0x7f0a001e;
+        public static final int textView1=0x7f0a0001;
+        public static final int tosCheckBox=0x7f0a0014;
+        public static final int updateWebViewButton=0x7f0a0025;
+        public static final int urlSpinner=0x7f0a0016;
+        public static final int userNameLabel=0x7f0a0012;
+        public static final int userNameTextView=0x7f0a001b;
+        public static final int usernameEditText=0x7f0a000f;
+        public static final int webView=0x7f0a001f;
+        public static final int yellowRadioButton=0x7f0a000b;
+    }
+    public static final class integer {
+        public static final int maxSize=0x7f050000;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
-        public static final int activity_simple_browser=0x7f030001;
-        public static final int activity_user_validation=0x7f030002;
-        public static final int activity_web_view_native_interaction=0x7f030003;
-        public static final int activity_welcome_screen=0x7f030004;
-        public static final int fragment_main=0x7f030005;
-        public static final int fragment_navigation_drawer=0x7f030006;
+        public static final int activity_register=0x7f030001;
+        public static final int activity_simple_browser=0x7f030002;
+        public static final int activity_user_validation=0x7f030003;
+        public static final int activity_web_view_native_interaction=0x7f030004;
+        public static final int activity_welcome_screen=0x7f030005;
     }
     public static final class menu {
-        public static final int global=0x7f080000;
-        public static final int main=0x7f080001;
-        public static final int user_validation=0x7f080002;
+        public static final int global=0x7f090000;
+        public static final int main=0x7f090001;
+        public static final int register=0x7f090002;
+        public static final int user_validation=0x7f090003;
     }
     public static final class string {
+        public static final int acceptTermsOfService=0x7f060023;
         public static final int action_example=0x7f06000c;
         public static final int action_settings=0x7f060002;
         public static final int app_name=0x7f060000;
+        public static final int display_alert=0x7f060019;
+        public static final int display_text=0x7f060018;
+        public static final int display_toast=0x7f06001a;
         public static final int email=0x7f060012;
+        public static final int enter_text=0x7f060017;
+        public static final int green=0x7f060020;
         public static final int hello_world=0x7f060001;
         public static final int load=0x7f060010;
         public static final int mobile_os=0x7f060015;
         public static final int navigation_drawer_close=0x7f06000b;
         public static final int navigation_drawer_open=0x7f06000a;
+        public static final int open_browser_webview=0x7f06001d;
+        public static final int open_webview_native_interaction=0x7f06001c;
         public static final int password=0x7f060014;
+        public static final int red=0x7f06001e;
+        public static final int register=0x7f060024;
+        public static final int register_form=0x7f06001b;
         public static final int return_to_main=0x7f060016;
         public static final int title_activity_main=0x7f060006;
+        public static final int title_activity_register=0x7f060022;
         public static final int title_activity_simple_browser=0x7f06000e;
         public static final int title_activity_user_validation=0x7f060011;
         public static final int title_activity_web_view=0x7f060005;
@@ -95,9 +124,11 @@ public final class R {
         public static final int title_section1=0x7f060007;
         public static final int title_section2=0x7f060008;
         public static final int title_section3=0x7f060009;
+        public static final int toast=0x7f060021;
         public static final int url=0x7f06000f;
         public static final int username=0x7f060013;
         public static final int welcome=0x7f060004;
+        public static final int yellow=0x7f06001f;
     }
     public static final class style {
         /** 
@@ -121,10 +152,10 @@ public final class R {
     
  API 14 theme customizations can go here. 
          */
-        public static final int AppBaseTheme=0x7f070000;
+        public static final int AppBaseTheme=0x7f080000;
         /**  Application theme. 
  All customizations that are NOT specific to a particular API-level can go here. 
          */
-        public static final int AppTheme=0x7f070001;
+        public static final int AppTheme=0x7f080001;
     }
 }

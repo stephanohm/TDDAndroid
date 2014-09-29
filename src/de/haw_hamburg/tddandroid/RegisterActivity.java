@@ -1,7 +1,5 @@
 package de.haw_hamburg.tddandroid;
 
-
-
 import de.haw_hamburg.tddandroid.utils.User;
 import android.annotation.TargetApi;
 import android.app.Activity;
@@ -14,48 +12,60 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
-import android.widget.TextView;
+import android.widget.CheckBox;
+import android.widget.EditText;
+import android.widget.Spinner;
 
-public class UserValidationActivity extends Activity {
+public class RegisterActivity extends Activity {
 
-	TextView emailTextView = null;
-	TextView userNameTextView = null;
-	TextView passwordTextView = null;
-	TextView mobileTextView = null;
-	Button returnButton = null;
+	EditText emailEditText = null;
+	EditText usernameEditText = null;
+	EditText passwordEditText = null;
+	CheckBox tosCheckbox = null;
+	Spinner mobileSpinner = null;
+	Button registerButton = null;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_user_validation);
+		setContentView(R.layout.activity_register);
 		
-		emailTextView = (TextView) findViewById(R.id.emailTextView);
-		userNameTextView = (TextView) findViewById(R.id.userNameTextView);
-		passwordTextView = (TextView) findViewById(R.id.passwordTextView);
-		mobileTextView = (TextView) findViewById(R.id.mobileTextView);
-		returnButton = (Button) findViewById(R.id.returnButton);
-		Bundle extras = getIntent().getExtras();
-	    if (extras != null) {
-	      User user = (User) extras.getSerializable("user");
-	      
-	      emailTextView.setText(user.getEmail());
-	      userNameTextView.setText(user.getUserName());
-	      passwordTextView.setText(user.getPassword());
-	      mobileTextView.setText(user.getMobileOS());
-	    }
-	    
-	    returnButton.setOnClickListener(new OnClickListener() {
-	    	
+		emailEditText = (EditText) findViewById(R.id.emailEditText);
+		usernameEditText = (EditText) findViewById(R.id.usernameEditText);
+		passwordEditText = (EditText) findViewById(R.id.passwordEditText);
+		mobileSpinner = (Spinner) findViewById(R.id.mobileSpinner);
+		registerButton = (Button) findViewById(R.id.registerButton);
+		
+		// Show the Up button in the action bar.
+		setupActionBar();
+		
+		registerButton.setOnClickListener(new OnClickListener() {
+			
 			@Override
 			public void onClick(View v) {
-				Intent nextScreen = new Intent(getApplicationContext() ,MainActivity.class);
-			    startActivity(nextScreen);
-				
+				//TODO Fehlerbehandlung TOS Checkbox
+				registerUser();		
 			}
 		});
-		setupActionBar();
+		
 	}
 
+	public void registerUser(){
+		Intent nextScreen = new Intent(this, UserValidationActivity.class);
+	    
+		String userName = usernameEditText.getText().toString();
+		String email = emailEditText.getText().toString();
+		String password = passwordEditText.getText().toString();
+		String prefferedOS = mobileSpinner.getSelectedItem().toString();
+		
+		User user = new User(email, userName);
+		user.setPassword(password);
+		user.setMobileOS(prefferedOS);
+		
+		nextScreen.putExtra("user", user);
+		startActivity(nextScreen);
+	}
+	
 	/**
 	 * Set up the {@link android.app.ActionBar}, if the API is available.
 	 */
@@ -69,7 +79,7 @@ public class UserValidationActivity extends Activity {
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.user_validation, menu);
+		getMenuInflater().inflate(R.menu.register, menu);
 		return true;
 	}
 
