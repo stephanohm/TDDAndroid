@@ -1,6 +1,0 @@
-# view AndroidManifest.xml #generated:25
--keep class de.haw_hamburg.tddandroid.MainActivity { <init>(...); }
-
-# view AndroidManifest.xml #generated:16
--keep class de.haw_hamburg.tddandroid.WelcomeScreenActivity { <init>(...); }
-
